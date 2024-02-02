@@ -1,0 +1,117 @@
+.header {
+    width: 100%;
+    min-width: 440px;
+    background-color:#344265;
+    position: fixed;
+    top: 0;
+    padding: 18px  0 24px;
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+    z-index: 100;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.logo {
+    color: #FAFF00;
+    fill: #FAFF00;
+    text-transform: uppercase;
+    display: flex;
+    gap: 6.5px;
+    align-items: center;
+}
+.textLogo {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap:1px;
+    font-size: 12px;
+font-weight: 600;
+width: 125px;
+    :first-child {
+            font-size: 16px;
+            color: #F8F8F8;
+        }
+}
+.searchLabel {
+width: 282px;
+height: 39px;
+position: relative;
+}
+.searchInput {
+width:256px;
+max-width: 282px;
+max-height: 39px;
+border-radius: 12px;
+border: none;
+padding: 11px 16px;
+color: #485982;
+}
+.searchIcon{
+    position: absolute;
+    right: 16px;
+    top:10.5px;
+}
+.phone{
+    fill: #FAFF00;
+    color: #fff;
+    display: flex;
+    font-weight: 16px;
+    gap:6px;
+    align-items: center;
+    font-weight: 700;
+}
+.firstRowHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.secondRowHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.navigation {
+    display: flex;
+    gap: 30px;
+    font-size: 17;
+    color: #fff;
+    font-size: 600;
+    transition: 300ms ease-in-out;
+}
+@media screen and (max-width: 780px) {
+    .firstRowHeader{
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+.navigation{
+    display:none;
+}
+
+}
+
+.navigation a:hover {
+    color: #FAFF00;
+}
+.btn {
+    padding: 9px 18px;
+    background-color: #FAFF00;
+    fill: #344265;
+    color: #344265;
+    width:160px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display:flex;
+    gap:9px;
+    align-items: center;
+    margin: 0 auto;
+    transition: 300ms ease-in-out;
+    
+        &:hover {
+            background-color: #fff;
+        }
+}
